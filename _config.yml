@@ -9,13 +9,13 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Code
-tagline: 
-author : Marek & Krystof Litomisky
-  name : Marek & Krystof Litomisky
-  email : code@litomisky.com
-  github : marekl
-  twitter : 
-  feedburner : 
+tagline: Stupid ideas for stupid problems
+author : Marek and Krystof Litomisky 
+name : Marek and Krystof Litomisky
+email : code@litomisky.com
+github : marekl
+twitter : 
+feedburner : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
