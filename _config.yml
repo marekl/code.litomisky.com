@@ -10,12 +10,13 @@ pygments: true
 #
 title : Code
 tagline: Stupid ideas for stupid problems
-author : Marek and Krystof Litomisky 
-name : Marek and Krystof Litomisky
-email : code@litomisky.com
-github : marekl
-twitter : 
-feedburner : 
+
+author :
+  name : Marek and Krystof Litomisky
+  email : code@litomisky.com
+  github : marekl
+  twitter : 
+  feedburner : 
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -100,7 +101,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-1685895-5'
     getclicky :
       site_id : 
     mixpanel :
