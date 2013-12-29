@@ -3,7 +3,7 @@
 SITE_ROOT="/vagrant/"
 
 VAGRANT_HOME="/home/vagrant"
-BOOTSTRAP_ROOT="$VAGRANT_HOME/.vagrantboostrap"
+BOOTSTRAP_ROOT="$VAGRANT_HOME/.vagrantbootstrap"
 
 # Fix "stdin: is not a tty"
 # 
@@ -33,20 +33,21 @@ then
 	touch "$BOOTSTRAP_ROOT/STRAPPED"
 
 	# Update first
-	sudo apt-get update 2>/dev/null
+	apt-get update 2>/dev/null
 	
 	# Install packages
-	sudo apt-get install vim curl unzip git make rake -y 2>/dev/null
+	apt-get install vim curl unzip git make rake -y 2>/dev/null
 	
 	# Install JSON gem
-	sudo gem install --no-rdoc --no-ri json
+	gem install --no-rdoc --no-ri json
 	
 	# Install Jekyll
-	sudo gem install --no-rdoc --no-ri jekyll
+	gem install --no-rdoc --no-ri jekyll
 	
 	# Change directory to the site root
 	cd $SITE_ROOT
 	
 	# Serve with Jekyll
-	sudo jekyll serve --watch &
+	touch "$BOOTSTRAP_ROOT/jekyllOutput"
+	jekyll serve --watch >> "$BOOTSTRAP_ROOT/jekyllOutput" 2>&1 &
 fi
