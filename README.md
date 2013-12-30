@@ -23,7 +23,9 @@ Add a post
 		$ rake post title="Post Title Here"
 		$ exit
 
-* This will create a new post with the current date and the title you specified. The file will be created under `_posts`, find it there and add your content.
+* This will create a new post with the current date and the title you specified. The file will be created under `_posts`, find it there and add your content. The `rake post` command can also add other information to the post for you:
+
+		# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [author="author"]
 
 * Once you are done with the post check that it looks correct on your local site and then commit and push it to GitHub. This will call a post commit hook to automatically deploy your changes to the live site.
 

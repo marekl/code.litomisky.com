@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Use a Beaglebone Black or Raspberry Pi as a backup server
-category : guides
-tagline: ""
+author : Marek Litomisky
 tags : [backup, beaglebone, black, rsnapshot, rsync]
 ---
 
