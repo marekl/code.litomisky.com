@@ -35,6 +35,12 @@
   </head>
 
   <body>
+    <div style="padding-top: 20px; text-align: center;">
+      <a class="brand" href="{{ HOME_PATH }}">
+        <h1>{{ site.tagline }}</h1>
+      </a>
+    </div>
+    
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
@@ -47,9 +53,7 @@
 
 
           <a class="brand" href="{{ HOME_PATH }}">
-            <span style="color: #A6E22E;">{</span>
-            {{ site.title }}
-            <span style="color: #A6E22E;">}</span>
+            <span style="color: #A6E22E;">{</span>{{ site.title }}<span style="color: #A6E22E;">}</span>
           </a>
 
 
