@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!-- Paginated Posts -->
+{% for post in paginator.posts %}
+	<div class="page-header-wrapper">
+		<div class="page-header">
+			<h1>
+				<a class="brand" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+			</h1>
+			<small>Posted by {{ post.author }} on {{ post.date | date_to_string }}</small>
+		</div>
+	</div>
+	<p>
+		{{ post.content }}
+	</p>
+{% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+		{% if paginator.previous_page %}
+			<a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Previous</a>
+		{% else %}
+			<a class="btn disabled prev">&larr; Previous</a>
+		{% endif %}
+
+		{% for page in (1..paginator.total_pages) %}
+			{% if page == paginator.page %}
+				<a class="btn disabled">{{ page }}</a>
+			{% elsif page == 1 %}
+				<a class="btn" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			{% else %}
+				<a class="btn" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			{% endif %}
+		{% endfor %}
+
+		{% if paginator.next_page %}
+			<a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
+		{% else %}
+			<a class="btn next disabled">Next &rarr;</a>
+		{% endif %}
+	</div>
+{% endif %}
