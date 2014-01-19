@@ -39,3 +39,8 @@ To remove all traces of the VM or
 	$ vagrant suspend
 
 To keep the VM disk and memory for quick startup the next time.
+
+FAQ
+---
+Q. The local version of the site isn't regenerating. What should I do?
+A. This is an issue with Vagrant shared folders not passing file system events between the host and client OS. Run regen.sh to regenerate the site.
