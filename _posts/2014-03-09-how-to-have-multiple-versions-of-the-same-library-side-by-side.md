@@ -14,7 +14,7 @@ For example, I work a lot with OpenCV, the computer vision library. I like to be
 The following assumes you're on a Linux machine. I'll use OpenCV as an example, but the concept applies to any library.
 
 
-### Set up Both Versions of OpenCV
+## Set up Both Versions of OpenCV
 
 The big idea is that you don't want to "install" OpenCV into the system's default directories (/usr/lib or /usr/local/lib), since each version would place itself into an "opencv" directory, creating a big ol' mess.
 
@@ -49,7 +49,7 @@ Let's go through the compilation process for the trunk version of OpenCV:
 
 
 
-### Create a Simple Test Program
+## Create a Simple Test Program
 
 Let's make sure our process worked.
 
