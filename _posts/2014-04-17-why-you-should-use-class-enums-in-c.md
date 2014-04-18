@@ -9,7 +9,7 @@ tags: [C++, C++11]
 
 This is a brief post about what class enums are in C++, and why you should use them.
 
-## The Problem: enums pollute global scope
+## The Problem: Enums Pollute Global Scope
 
 Here's a conflict you might get when using enums:
 
