@@ -2,7 +2,7 @@
 layout: post
 title: Use a fixed custom login background in Ubuntu 13.04
 author : Marek Litomisky
-tags : [Ubuntu, login, background, customization]
+tags : [Ubuntu, login background, customization]
 ---
 
 Configure lightdm (the display manager) to use a custom static background for 

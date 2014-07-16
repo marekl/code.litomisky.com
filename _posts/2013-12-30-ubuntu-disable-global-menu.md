@@ -2,7 +2,7 @@
 layout: post
 title: Disable the global menu in Ubuntu 13.04
 author : Marek Litomisky
-tags : [Ubuntu, Gobal Menu, disable, customization]
+tags : [Ubuntu, Gobal Menu, customization]
 ---
 
 Using the following steps you can disable the global menu. There are some issues 

@@ -2,7 +2,7 @@
 layout: post
 title: How to configure Ubuntu 13.04 for use with A Yubikey
 author : Marek Litomisky
-tags : [Ubuntu, Yubikey, 2-Factor, authentication]
+tags : [Ubuntu, Yubikey, 2-Factor authentication]
 ---
 
 Setup Ubuntu to require Yubikey Challenge-Response during authentication
