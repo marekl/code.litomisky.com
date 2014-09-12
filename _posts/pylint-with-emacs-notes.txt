@@ -1,0 +1,19 @@
+Notes on setting up pylint to work inside emacs:
+
+1. Install flycheck & pylint
+
+2. Add the line to .emacs:
+; start flycheck syntax checker
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+Restart emacs. Now it works, but flags a huge amount of stuff. Let's disable some of those errors & warnings.
+
+3. Generate pylintrc (I put it in ~/.pylintrc):
+pylint --generate-rcfile >.pylintrc
+
+4. Disable whatever you want by adding the appropriate codes to the "#disable=" line.
+I set mine to
+disable= CO103, C0326, W0621, C0111, C0103, W0702, W0703, C0321, W0511, W0102,
+	 R0913, R0914, R0915, R0912
+
+You can figure out the codes for things by looking here: http://pylint-messages.wikidot.com/all-messages
