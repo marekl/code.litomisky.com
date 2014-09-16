@@ -1,6 +1,15 @@
+BIG FIRST STEP:
+Set up a package manager for emacs
+How tricky is this?
+Need emacs >= 24
+
+
+NOTE:
 Notes on setting up pylint to work inside emacs:
 
+
 1. Install flycheck & pylint
+
 
 2. Add the line to .emacs:
 ; start flycheck syntax checker
