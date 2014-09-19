@@ -36,7 +36,7 @@ then
 	apt-get update 2>/dev/null
 	
 	# Install packages
-	apt-get install vim curl unzip git make rake -y 2>/dev/null
+	apt-get install vim curl unzip git make ruby1.9.3 rake -y 2>/dev/null
 	
 	# Install JSON gem
 	gem install --no-rdoc --no-ri json
