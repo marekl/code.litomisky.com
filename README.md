@@ -1,11 +1,17 @@
-code.litomisky.com
+[Admiral Ackbar's Code Emporium](aace)
 ==================
 
 Setup
 -----
 
-* Install [VirtualBox](https://www.virtualbox.org)
-* Install [Vagrant](http://www.vagrantup.com)
+* Install [VirtualBox](virtualbox)
+
+		# apt-get install virtualbox
+
+* Install [Vagrant](vagrant)
+
+		# apt-get install vagrant
+
 * Clone the repository and boot the VM:
 
 		$ git clone git@github.com:marekl/code.litomisky.com.git
@@ -32,15 +38,20 @@ Add a post
 Cleanup
 -------
 
+Remove all traces of the VM:
+
 	$ vagrant destroy
 
-To remove all traces of the VM or
+Suspend the VM for a faster boot next time but more disk usage:
 
 	$ vagrant suspend
 
-To keep the VM disk and memory for quick startup the next time.
-
 FAQ
 ---
-Q. The local version of the site isn't regenerating. What should I do?
-A. This is an issue with Vagrant shared folders not passing file system events between the host and client OS. Run regen.sh to regenerate the site.
+**Q.** The local version of the site isn't regenerating. What should I do?
+
+**A.** This is an issue with Vagrant shared folders not passing file system events between the host and client OS. Run regen.sh to regenerate the site.
+
+[aace]: http://code.litomisky.com/
+[virtualbox]: https://www.virtualbox.org
+[vagrant]: http://www.vagrantup.com
