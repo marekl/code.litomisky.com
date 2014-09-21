@@ -1,14 +1,14 @@
-[Admiral Ackbar's Code Emporium](aace)
+[Admiral Ackbar's Code Emporium][aace]
 ==================
 
 Setup
 -----
 
-* Install [VirtualBox](virtualbox)
+* Install [VirtualBox][virtualbox]
 
 		# apt-get install virtualbox
 
-* Install [Vagrant](vagrant)
+* Install [Vagrant][vagrant]
 
 		# apt-get install vagrant
 
