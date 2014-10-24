@@ -1,18 +1,15 @@
-Vagrant.configure("2") do |config|
-  # All Vagrant configuration is done here. The most common configuration
-  # options are documented and commented below. For a complete reference,
-  # please see the online documentation at vagrantup.com.
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
 
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "precise64"
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
 
-  # The url from where the 'config.vm.box' box will be fetched if it
-  # doesn't already exist on the user's system.
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_url = "https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/1/providers/virtualbox.box"
 
-  # Port forwarding
-  config.vm.network :forwarded_port, host: 4000, guest: 4000 # Node
+  config.vm.network :forwarded_port, guest: 4000, host: 4000
 
-  # Bash Bootstrap
-  config.vm.provision :shell, :path => "vagrant/vagrantbootstrap.sh"
+  config.vm.provision :shell, :path => "VagrantBootstrap.sh"
+
 end
