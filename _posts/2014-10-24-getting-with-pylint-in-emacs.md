@@ -11,7 +11,7 @@ emacs is my favorite editor, and python is my favorite scripting language. Somet
 
 This post is a guide in getting started with pylint inside emacs. Pylint does finds syntax and other issues, so you can spot and fix them as soon as you make them. It can also be used to enforce style guides, notably [pep8](http://legacy.python.org/dev/peps/pep-0008/). With the Flycheck emacs extension, pylint's output will be shown right inside your emacs buffers.
 
-![Flycheck + Pylint screenshot](../assets/images/flycheck-pylint.png)
+![Flycheck + Pylint screenshot]({{ site.url }}/assets/images/flycheck-pylint.png)
 
 
 ## Requirements:
