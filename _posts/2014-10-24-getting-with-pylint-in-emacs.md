@@ -52,8 +52,8 @@ You can disable whatever warnings and errors you want by adding the appropriate 
 
 Obviously, which ones to disable is a matter of preference. For now, I've set mine to
 
-    disable= CO103, C0326, W0621, C0111, C0103, W0702, W0703, C0321, W0511, W0102,
-             R0913, R0914, R0915, R0912, R0902, R0903, C0303, C0302, C0325
+    disable= C0326, W0621, C0111, C0103, W0702, W0703, C0321, W0511, W0102, R0913,
+             R0914, R0915, R0912, R0902, R0903, C0303, C0302, C0325, W0401
 
 I've also upped the maximum number of characters allowed per line to 120 characters by `max-line-length=120`.
 
