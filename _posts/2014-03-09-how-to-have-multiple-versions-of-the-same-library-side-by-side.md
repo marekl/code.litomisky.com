@@ -56,47 +56,47 @@ Let's make sure our process worked.
 Here's a simple program that prints the running OpenCV version:
 
 main.cpp:
-```
-#include <iostream>
-#include "opencv2/core/version.hpp"
 
-int main(int argc, char ** argv)
-{
-  std::cout << "OpenCV version: "
-            << CV_MAJOR_VERSION << "." 
-            << CV_MINOR_VERSION << "."
-            << CV_SUBMINOR_VERSION
-            << std::endl;
-  return 0;
-}
-```
+	#include <iostream>
+	#include "opencv2/core/version.hpp"
+
+	int main(int argc, char ** argv)
+	{
+	  std::cout << "OpenCV version: "
+				<< CV_MAJOR_VERSION << "." 
+				<< CV_MINOR_VERSION << "."
+				<< CV_SUBMINOR_VERSION
+				<< std::endl;
+	  return 0;
+	}
+
 
 Makefile:
-```
-CPP = g++
 
-# OpenCV trunk
-CPPFLAGS = -L/home/krystof/libs/opencv-trunk/release/installed/libs \
-	   -I/home/krystof/libs/opencv-trunk/release/installed/include
+	CPP = g++
 
-# Opencv 2.4.8
-#CPPFLAGS = -L/home/krystof/libs/opencv-2.4.8/release/installed/libs \
-	   -I/home/krystof/libs/opencv-2.4.8/release/installed/include
+	# OpenCV trunk
+	CPPFLAGS = -L/home/krystof/libs/opencv-trunk/release/installed/libs \
+		   -I/home/krystof/libs/opencv-trunk/release/installed/include
 
-all: test
+	# Opencv 2.4.8
+	#CPPFLAGS = -L/home/krystof/libs/opencv-2.4.8/release/installed/libs \
+		   -I/home/krystof/libs/opencv-2.4.8/release/installed/include
 
-test: main.cpp
-	$(CPP) $(CPPFLAGS) $^ -o $@
-```
+	all: test
+
+	test: main.cpp
+		$(CPP) $(CPPFLAGS) $^ -o $@
+
 
 Make sure you adjust the paths in the Makefile to match your own, based on where you installed the different OpenCV versions. Based on which CPPFLAGS line in the Makefile you leave in, you should get one of the following outputs:
-```
-OpenCV version: 2.4.8
-```
+
+	OpenCV version: 2.4.8
+
 or
-```
-OpenCV version: 3.0.0
-```
+
+	OpenCV version: 3.0.0
+
 3.0.0 is the output from the trunk version here.
 
 So there you go! All you have to do is change one line in a Makefile, and your code gets compiled with different versions of OpenCV!
